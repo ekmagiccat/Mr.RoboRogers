@@ -26,7 +26,7 @@ This website will allow users to input a number and return the phrases: "Beep!",
 
 ## Known Bugs
 
-- None
+- User needs to manually refresh page for option to submit new number.
 
 Describe: mrRogers()
 
@@ -37,8 +37,6 @@ Expected Output: "Beep!"
 Test: "It should return 'Boop!' for all digits containing a number 2."
 Code: mrRogers(20)
 Expected Output: "Boop!"
-
-Describe: mrRogers3()
 
 Test: "It should return 'Won't you be my neighbor?' for all digits containing a number 3."
 Code: mrRogers(333)
