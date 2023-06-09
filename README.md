@@ -38,6 +38,8 @@ Test: "It should return 'Boop!' for all digits containing a number 2."
 Code: mrRogers(20)
 Expected Output: "Boop!"
 
+Describe: mrRogers3()
+
 Test: "It should return 'Won't you be my neighbor?' for all digits containing a number 3."
 Code: mrRogers(333)
 Expected Output: "Won't you be my neighbor?"
