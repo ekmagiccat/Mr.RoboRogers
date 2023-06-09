@@ -1,3 +1,36 @@
+// UI Logic
+
+function handleForm(event) {
+  event.preventDefault();
+  const userInput = document.querySelectorAll("input[name=number]");
+  const userInputArray = Array.from(userInput);
+
+  const resultHeading = document.createElement("h3");
+  resultHeading.append("Your message:");
+  document.body.append(resultHeading);
+
+  let newArray = [];
+  userInputArray.forEach(function (element) {
+    newArray.push(element.value);
+  });
+  newArray.sort();
+  console.log(newArray);
+  newArray.forEach(function (message) {
+    const paragraph = document.createElement("p");
+    paragraph.append(message[0].toUpperCase() + message.slice(1));
+    document.body.append(paragraph);
+  });
+  const form = document.getElementById("num-message");
+  form.setAttribute("class", "hidden");
+}
+
+window.addEventListener("load", function () {
+  document
+    .querySelector("form#num-message")
+    .addEventListener("submit", handleForm);
+  console.log(document.querySelector("form#num-message"));
+});
+
 // code that works for test 1:
 
 function mrRogers(text) {
@@ -9,6 +42,8 @@ function mrRogers(text) {
   });
   return num1Total;
 }
+
+/*/not working
 
 function mrRogers2(text) {
   let num2 = ["2"];
@@ -42,7 +77,7 @@ function mrRogers(text) {
 
 */
 
-// UI Logic example
+/* UI Logic example
 
 function handleClick() {
   console.log("The button has been clicked!");
@@ -52,3 +87,4 @@ window.addEventListener("load", function () {
   const btn = querySelector("button");
   btn.addEventListener("click", handleClick);
 });
+*/
