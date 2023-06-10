@@ -58,10 +58,21 @@ function mrRogers(text) {
 // code the works for test 2:
 function mrRogers(text) {
   let num2 = ["2"];
-  const special = /\b\d*2\d*\b/g;
+  const special2 = /\b\d*2\d*\b/g;
   let num1Total = text;
   num2.forEach(function (word) {
-    num1Total = num1Total.replaceAll(special, "Boop!");
+    num1Total = num1Total.replaceAll(special2, "Boop!");
+  });
+  return num1Total;
+}
+
+//code for test 3:
+function mrRogers(text) {
+  let num3 = ["3"];
+  const special3 = /\b\d*3\d*\b/g;
+  let num1Total = text;
+  num3.forEach(function (word) {
+    num1Total = num1Total.replaceAll(special3, "Won't you be my neighbor?");
   });
   return num1Total;
 }
