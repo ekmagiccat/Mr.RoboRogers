@@ -31,14 +31,37 @@ window.addEventListener("load", function () {
   console.log(document.querySelector("form#num-message"));
 });
 
-// code that works for test 1:
+//Business Logic
 
+//testing new code
+
+function mrRogers(userInput) {
+  const special = /\b\d*1\d*\b/g;
+  userInput = [];
+  userInputArray.forEach(function (word) {
+    result = userInput.replaceAll(special, "Beep!");
+  });
+  return result;
+}
+
+// code that works for test 1:
 function mrRogers(text) {
   let num1 = ["1"];
   const special = /\b\d*1\d*\b/g;
   let num1Total = text;
   num1.forEach(function (word) {
     num1Total = num1Total.replaceAll(special, "Beep!");
+  });
+  return num1Total;
+}
+
+// code the works for test 2:
+function mrRogers(text) {
+  let num2 = ["2"];
+  const special = /\b\d*2\d*\b/g;
+  let num1Total = text;
+  num2.forEach(function (word) {
+    num1Total = num1Total.replaceAll(special, "Boop!");
   });
   return num1Total;
 }
