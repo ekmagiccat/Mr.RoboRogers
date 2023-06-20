@@ -35,14 +35,24 @@ window.addEventListener("load", function () {
 
 //testing new code
 
-function mrRogers(userInput) {
+function mrRogers(text) {
   const special = /\b\d*1\d*\b/g;
-  userInput = [];
-  userInputArray.forEach(function (word) {
-    result = userInput.replaceAll(special, "Beep!");
-  });
-  return result;
-}
+  const special2 = /\b\d*2\d*\b/g;
+  const special3 = /\b\d*3\d*\b/g;
+  let outputArray = [];
+  let userInputArray = Array.from(text);
+  userInputArray.forEach(function () {
+    if (text.includes("1")) {
+      outputArray = text.replaceAll(special, "Beep!");
+    } else if (text.includes("2")) {
+      output = text.replaceAll(special2, "Boop!");
+    } else if (text.includes("3")) {
+      output = text.replaceAll(special3, "Won't you be my neighbor?");
+    }
+    outputArray.push(text);
+  })
+  return outputArray;
+};
 
 // code that works for test 1:
 function mrRogers(text) {
@@ -88,28 +98,6 @@ function mrRogers2(text) {
   });
   return num1Total;
 }
-
-/* code that doesn't work
-
-function mrRogers(text) {
-  let num1 = ["1"];
-  let num2 = ["2"];
-  let num3 = ["3"];
-  const special = /\b\d*1\d*\b/g;
-  let numTotal = text;
-  numTotal.forEach(function (word) {
-    if (numTotal.includes(num1)) {
-        result = numTotal.replaceAll(special, "Beep!"); 
-    } else if (text.includes(num2)) {
-        result = numTotal.replaceAll(special, "Boop!");
-    } else {
-
-    }
-  });
-  return numTotal;
-}
-
-*/
 
 /* UI Logic example
 
