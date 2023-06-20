@@ -1,4 +1,4 @@
-# Eva Kemp's Portfolio
+# Mr. Roger's Neighborhood
 
 #### **By Eva Kemp**
 
@@ -32,21 +32,11 @@ This website will allow users to input a number and return the phrases: "Beep!",
 
 Describe: mrRogers()
 
-Test: "It should return 'Beep!' for all digits containing a number 1."
+Test: "It should return 'Beep!' for all digits containing a number 1, return 'Boop!' for all digits containing a number 2, and return 'Won't you be my neighbor?' for all digits containing a number 3."
 Code: mrRogers(1);
 Expected Output: "Beep!"
 
-Test: "It should return 'Boop!' for all digits containing a number 2."
-Code: mrRogers(20)
-Expected Output: "Boop!"
-
-Test: "It should return 'Won't you be my neighbor?' for all digits containing a number 3."
-Code: mrRogers(333)
-Expected Output: "Won't you be my neighbor?"
-
-Test: "It should
-Code:
-Expected Output:
+Describe:
 
 Test: "It should
 Code:
@@ -56,7 +46,7 @@ Expected Output:
 
 MIT License
 
-Copyright (c) _06/09/2023_ Eva Kemp
+Copyright (c) _06/19/2023_ Eva Kemp
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
