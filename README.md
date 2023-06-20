@@ -36,12 +36,6 @@ Test: "It should return 'Beep!' for all digits containing a number 1, return 'Bo
 Code: mrRogers(1);
 Expected Output: "Beep!"
 
-Describe:
-
-Test: "It should
-Code:
-Expected Output:
-
 ## License
 
 MIT License
