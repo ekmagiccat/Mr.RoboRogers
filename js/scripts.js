@@ -1,13 +1,13 @@
 //Business Logic
 
-function mrRogers(text) {
+function mrRogers(num) {
   const special = /\b\d*1\d*\b/g;
   const special2 = /\b\d*2\d*\b/g;
   const special3 = /\b\d*3\d*\b/g;
   let outputArray = [];
 
-  for (let i = 0; i <= 0; i++) {
-    let output = text.toString();
+  for (let i = 0; i <= num; i++) {
+    let output = i.toString();
 
     if (output.includes("1")) {
       output = output.replaceAll(special, "Beep!");
@@ -15,8 +15,6 @@ function mrRogers(text) {
       output = output.replaceAll(special2, "Boop!");
     } else if (output.includes("3")) {
       output = output.replaceAll(special3, "Won't you be my neighbor?");
-    } else if (output.match(/[a-zA-Z]/)) {
-      output = undefined;
     }
 
     outputArray.push(output);
@@ -25,6 +23,8 @@ function mrRogers(text) {
   return outputArray;
 }
 
+// UI Logic
+
 function handleForm(event) {
   event.preventDefault();
   const userInput = document.querySelectorAll("input[name=number]");
@@ -32,7 +32,7 @@ function handleForm(event) {
 
   const resultHeading = document.createElement("h3");
   resultHeading.append("Your message:");
-  document.body.append(resultHeading);
+  document.body.append(resultHeading); //edit this section
 
   let newArray = [];
   userInputArray.forEach(function (element) {
@@ -52,7 +52,7 @@ function handleForm(event) {
   form.setAttribute("class", "hidden");
   setTimeout(function () {
     window.location.reload();
-  }, 4000);
+  }, 8000);
 }
 
 window.addEventListener("load", function () {
