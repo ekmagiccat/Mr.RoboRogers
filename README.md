@@ -20,10 +20,6 @@ This website will allow users to input a number and return the phrases: "Beep!",
 - After downloading, open the file.
 - Navigate to "index.html". Then open the file in your browser of choice for viewing.
 
-## GitHub Pages
-
-[Won't You Be My Neighbor](https://ekmagiccat.github.io/week-three-CR/)
-
 ## Known Bugs
 
 - None

@@ -9,12 +9,12 @@ function mrRogers(num) {
   for (let i = 0; i <= num; i++) {
     let output = i.toString();
 
-    if (output.includes("1")) {
-      output = output.replaceAll(special, "Beep!");
+    if (output.includes("3")) {
+      output = output.replaceAll(special3, "Won't you be my neighbor?");
     } else if (output.includes("2")) {
       output = output.replaceAll(special2, "Boop!");
-    } else if (output.includes("3")) {
-      output = output.replaceAll(special3, "Won't you be my neighbor?");
+    } else if (output.includes("1")) {
+      output = output.replaceAll(special, "Beep!");
     }
 
     outputArray.push(output);
@@ -32,7 +32,7 @@ function handleForm(event) {
 
   const resultHeading = document.createElement("h3");
   resultHeading.append("Your message:");
-  document.body.append(resultHeading); //edit this section
+  document.body.append(resultHeading);
 
   let newArray = [];
   userInputArray.forEach(function (element) {
@@ -52,7 +52,7 @@ function handleForm(event) {
   form.setAttribute("class", "hidden");
   setTimeout(function () {
     window.location.reload();
-  }, 8000);
+  }, 4000);
 }
 
 window.addEventListener("load", function () {
